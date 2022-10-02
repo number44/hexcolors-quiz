@@ -6,7 +6,7 @@
 }
 .box {
 	border-radius: 0.5rem;
-	aspect-ratio: 4/ 3;
+	aspect-ratio: 4/3;
 	box-shadow: 0px 0px 3px #2c2c2c;
 	transition: all ease-in-out 0.3s;
 }
@@ -23,6 +23,8 @@
 		align-items: center;
 		transition: all ease-in-out 0.3s;
 		cursor: pointer;
+		font-size: 90%;
+		font-weight: 900;
 		&:hover {
 			transform: scale(0.95);
 		}

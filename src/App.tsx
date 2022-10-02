@@ -34,6 +34,7 @@ function App() {
 	}, [nr]);
 	return (
 		<div className={styles.container}>
+			<h2>choose correct color </h2>
 			<div className={styles.box} style={{ background: color }}></div>
 			<div className={styles.grid}>
 				{colorsArr?.map((c, index) => (
@@ -42,7 +43,7 @@ function App() {
 					</div>
 				))}
 			</div>
-			<div>{showAnswer && <h1 style={{ color: answer === 'false' ? 'red' : 'green' }}>Answer was {answer}</h1>}</div>
+			<div>{showAnswer && <h1 style={{ color: answer === 'false' ? 'red' : 'green' }}>Answer was {answer === 'true' ? 'correct' : 'incorrect'}</h1>}</div>
 			<h2>Correct answers : {nr}</h2>
 			<h2>Attempts : {attempts}</h2>
 		</div>
