@@ -1,0 +1,30 @@
+.container {
+	margin-top: 4rem;
+	max-width: 400px;
+	width: 90vw;
+	margin-inline: auto;
+}
+.box {
+	border-radius: 0.5rem;
+	aspect-ratio: 4/ 3;
+	box-shadow: 0px 0px 3px #2c2c2c;
+	transition: all ease-in-out 0.3s;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	margin-top: 1rem;
+	.grid-box {
+		line-height: 2.4;
+		box-shadow: 0px 0px 3px #2c2c2c;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all ease-in-out 0.3s;
+		cursor: pointer;
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+}
